@@ -144,8 +144,10 @@ td.un { color: var(--warn); font-weight: 600; }
 }
 @media (prefers-reduced-motion: reduce) { * { scroll-behavior: auto !important; } }
 
-.sent { margin-bottom: 14px; padding: 12px 14px; border-radius: 10px; background: var(--accent-soft); border: 1px solid var(--accent); }
+.sent { margin-bottom: 14px; padding: 12px 14px; border-radius: 10px; background: #e1f3e5; border: 1px solid #2e8a4f; color: #12361f; }
 .sent strong { display: block; }
+.sent strong::before { content: "\2713  "; }
+@media (prefers-color-scheme: dark) { .sent { background: #143323; border-color: #4fb273; color: #d3f2de; } }
 .btn.wide { min-width: 9rem; }
 .item label.main { grid-template-columns: 28px 88px minmax(0, 1fr); }
 .thumb { width: 88px; height: 88px; padding: 0; border: 1px solid var(--line); border-radius: 8px; overflow: hidden;
